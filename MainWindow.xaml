@@ -1,0 +1,118 @@
+﻿<Window x:Class="CyberSecurityChatbot_PART_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CyberSecurity Chatbot" Height="650" Width="500"
+        Background="#0A192F">
+
+    <!-- 
+    This is the main layout container for the chatbot window.
+    Margin creates spacing between the window edges and content.
+    -->
+    <Grid Margin="10">
+
+        <!-- 
+        Row definitions divide the window into sections:
+        Row 1 = Header
+        Row 2 = Chat area
+        Row 3 = Input area
+        -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
+
+        <!-- HEADER SECTION -->
+        <!-- 
+        This section displays the chatbot title
+        and slogan at the top of the application.
+        -->
+        <StackPanel Grid.Row="0" HorizontalAlignment="Center">
+
+            <!-- Main chatbot heading -->
+            <TextBlock Text="🦋
+WELCOME TO UNIQUA SAFESPACE 🦋
+"
+               Foreground="Magenta"
+               FontSize="22"
+               FontWeight="Bold"
+               HorizontalAlignment="Center"/>
+
+            <!-- Chatbot slogan/description -->
+            <TextBlock Text="Your cybersecurity chatbot, a Safe Space for Smarter Cyber Choices"
+               Foreground="White"
+               FontSize="12"
+               HorizontalAlignment="Center"/>
+
+        </StackPanel>
+
+        <!-- CHAT AREA -->
+        <!-- 
+        This area displays messages between
+        the user and chatbot.
+        
+        ScrollViewer allows scrolling when
+        messages become too many.
+        -->
+        <ScrollViewer Grid.Row="1"
+              x:Name="ChatScroll"
+              VerticalScrollBarVisibility="Auto"
+              Background="#112240"
+              Margin="5">
+
+            <!-- 
+            ChatPanel stores all message bubbles
+            for both user and chatbot.
+            -->
+            <StackPanel x:Name="ChatPanel"
+                Margin="10">
+            </StackPanel>
+
+        </ScrollViewer>
+
+        <!-- INPUT AREA -->
+        <!-- 
+        This section contains the textbox
+        where the user types messages
+        and the Send button.
+        -->
+        <Grid Grid.Row="2">
+
+            <!-- Creates two columns:
+            Column 1 = Textbox
+            Column 2 = Send button
+            -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="120"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- User input textbox -->
+            <!-- 
+            Allows users to type messages.
+            Pressing Enter also sends a message.
+            -->
+            <TextBox x:Name="UserInput"
+                     Grid.Column="0"
+                     Height="40"
+                     Margin="0,0,10,0"
+                     FontSize="14"
+                     KeyDown="UserInput_KeyDown"
+                     VerticalContentAlignment="Center"/>
+
+            <!-- Send button -->
+            <!-- 
+            Sends the user's message to the chatbot
+            when clicked.
+            -->
+            <Button Content="Send"
+                    Grid.Column="1"
+                    Height="40"
+                    Background="#FFF100FF"
+                    Foreground="Black"
+                    FontWeight="Bold"
+                    Click="SendButton_Click"/>
+        </Grid>
+
+    </Grid>
+</Window>
