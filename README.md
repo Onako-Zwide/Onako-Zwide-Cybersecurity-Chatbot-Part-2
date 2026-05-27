@@ -25,3 +25,16 @@ I implemented sentiment detection to identify user emotions such as:
 - Frustrated
 - Happy
 
+I included multiple cybersecurity awareness topics, such as:
+- Phishing 
+- Password safety
+- Scams
+- Online safety
+- VPN 
+- Privacy
+- Cyberbullying
+- Email safety
+- Social engineering
+- Suspicious links
+- Public Wi-Fi risks
+
