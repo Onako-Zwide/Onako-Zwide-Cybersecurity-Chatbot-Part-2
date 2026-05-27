@@ -10,3 +10,18 @@ I also added:
 - Follow-up handling using phrases like "tell me more"
 - Conversation flow tracking using the last topic discussed
 - Personalised greetings for both new and returning users
+
+#
+I then created a memory system that:
+- Stores the user's name
+- Stores their favourite cybersecurity topic
+- Remembers returning users using file storage
+- Personalises responses based on previous conversations
+
+#
+I implemented sentiment detection to identify user emotions such as:
+- Worried
+- Curious
+- Frustrated
+- Happy
+
