@@ -16,6 +16,17 @@ The chatbot provides interactive responses, remembers users, and adapts replies 
 - SplashScreen.xaml
 - SplashScreen.xaml.cs
 
+# GUI
+I designed a WPF-based graphical user interface for my chatbot.
+My interface includes:
+-A clean chat bubble system for both user and chatbot messages
+-A scrollable chat area to view conversation history
+-A typing indicator to simulate real-time responses
+-A voice greeting that plays when the application starts
+-A splash screen that appears before the main window loads
+When the application starts, the splash screen displays before the main chatbot window opens, simulates a loading experience, 3-4 seconds later it closes then the main chatbot window opens automatically and the conversation begins.
+
+
 #
 I implemented a keyword-based response system that allows the chatbot to recognise user input and respond appropriately.
 I also added:
@@ -37,15 +48,6 @@ I implemented sentiment detection to identify user emotions such as:
 - Curious
 - Frustrated
 - Happy
-
-# GUI
-I designed a WPF-based graphical user interface for my chatbot.
-My interface includes:
--A clean chat bubble system for both user and chatbot messages
--A scrollable chat area to view conversation history
--A typing indicator to simulate real-time responses
--A voice greeting that plays when the application starts
--A splash screen that appears before the main window loads
 
 I included multiple cybersecurity awareness topics, such as:
 - Phishing 
