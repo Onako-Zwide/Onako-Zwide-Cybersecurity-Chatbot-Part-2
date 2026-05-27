@@ -26,6 +26,27 @@ My interface includes:
 -A splash screen that appears before the main window loads
 When the application starts, the splash screen displays before the main chatbot window opens, simulates a loading experience, 3-4 seconds later it closes then the main chatbot window opens automatically and the conversation begins.
 
+# Chatbot.cs
+I created the ChatBot.cs file as the core logic of my application. This file controls how the chatbot behaves and responds during conversations.
+In this file, I implemented:
+Conversation flow control (asking for the user’s name and starting the chat)
+Keyword recognition to detect cybersecurity topics such as phishing, scams, and password safety
+Sentiment detection to adjust responses based on the user’s emotion
+Memory integration to remember user details like name and favourite topics
+Follow-up handling using phrases like “tell me more” and “explain more”
+Returning user detection to welcome users back with previous context. 
+I included multiple cybersecurity awareness topics, such as:
+- Phishing 
+- Password safety
+- Scams
+- Online safety
+- VPN 
+- Privacy
+- Cyberbullying
+- Email safety
+- Social engineering
+- Suspicious links
+
 
 #
 I implemented a keyword-based response system that allows the chatbot to recognise user input and respond appropriately.
@@ -48,17 +69,4 @@ I implemented sentiment detection to identify user emotions such as:
 - Curious
 - Frustrated
 - Happy
-
-I included multiple cybersecurity awareness topics, such as:
-- Phishing 
-- Password safety
-- Scams
-- Online safety
-- VPN 
-- Privacy
-- Cyberbullying
-- Email safety
-- Social engineering
-- Suspicious links
-- Public Wi-Fi risks
 
