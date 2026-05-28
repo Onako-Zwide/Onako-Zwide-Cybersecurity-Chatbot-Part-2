@@ -68,5 +68,9 @@ I implemented sentiment detection to identify user emotions such as:
 - Worried
 - Curious
 - Frustrated
+
+# Youtube & Video
+-Recorded my presentation video and ran my project on it 
+-I uploaded my cybersecurity chatbot presentation video on youtube
 - Happy
 
