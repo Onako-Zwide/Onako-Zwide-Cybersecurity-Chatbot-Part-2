@@ -72,5 +72,9 @@ I implemented sentiment detection to identify user emotions such as:
 # Youtube & Video
 -Recorded my presentation video and ran my project on it 
 -I uploaded my cybersecurity chatbot presentation video on youtube
+
+# CI tick
+<img width="1308" height="268" alt="image" src="https://github.com/user-attachments/assets/57a53efe-e22e-4df9-823d-7a825adcd446" />
+
 - Happy
 
